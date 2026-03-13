@@ -83,7 +83,7 @@
     return elemMap[stem] || null;
   }
 
-  // 十干の陰陽判定（甲=陽, 乙=陰, 丙=陽, ...）
+  // 十干の陰陽判定（甲=陽(odd), 乙=陰(even), 丙=陽(odd), ...）
   function getStemPolarity(stem) {
     const polarityMap = {
       "甲": "odd",   "乙": "even",
@@ -95,9 +95,14 @@
     return polarityMap[stem] || null;
   }
 
+  // ✅ 陰陽を日本語に変換（judaishusei_map.json用）
+  function getPolarityLabel(polarity) {
+    return polarity === "odd" ? "same_polarity" : "different_polarity";
+  }
+
   // 五行の相互関係を計算
   // base = 日干, target = 対象干
-  // 戻り値: "same", "generates", "generatedBy", "controls", "controlledBy"
+  // 戻り値: "same", "base_generates_target", "target_generates_base", "base_controls_target", "target_controls_base"
   function getFiveElementRelation(baseStem, targetStem) {
     const baseElem = getStemElement(baseStem);
     const targetElem = getStemElement(targetStem);
@@ -130,19 +135,19 @@
     };
 
     if (generates[baseElem] === targetElem) {
-      return "generates"; // 日干が対象干を生む
+      return "base_generates_target"; // 日干が対象干を生む
     }
 
     if (generates[targetElem] === baseElem) {
-      return "generatedBy"; // 対象干が日干を生む
+      return "target_generates_base"; // 対象干が日干を生む
     }
 
     if (controls[baseElem] === targetElem) {
-      return "controls"; // 日干が対象干を剋す
+      return "base_controls_target"; // 日干が対象干を剋す
     }
 
     if (controls[targetElem] === baseElem) {
-      return "controlledBy"; // 対象干が日干を剋す
+      return "target_controls_base"; // 対象干が日干を剋す
     }
 
     throw new Error(`五行関係不明: ${baseElem} と ${targetElem}`);
@@ -158,6 +163,7 @@
     
     // 対象干の陰陽を取得
     const polarity = getStemPolarity(targetStem);
+    const polarityLabel = getPolarityLabel(polarity);
 
     // judaishusei_map.json から該当する星を取得
     const relationData = YO_MASTER.judaishuseiMap?.[relation];
@@ -165,9 +171,9 @@
       throw new Error(`judaishusei_map.json に関係 ${relation} がありません`);
     }
 
-    const star = relationData[polarity];
+    const star = relationData[polarityLabel];
     if (!star) {
-      throw new Error(`十大主星未定義: 関係=${relation}, 陰陽=${polarity}`);
+      throw new Error(`十大主星未定義: 関係=${relation}, 陰陽=${polarityLabel}`);
     }
 
     return star;
