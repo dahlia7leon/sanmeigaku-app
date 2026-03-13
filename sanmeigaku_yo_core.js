@@ -71,33 +71,19 @@
   // 五行相互関係の計算
   // =========================
 
-  // 十干の五行対応
+  // 十干の五行対応（stems_master.json から取得）
   function getStemElement(stem) {
-    const elemMap = {
-      "甲": "木", "乙": "木",
-      "丙": "火", "丁": "火",
-      "戊": "土", "己": "土",
-      "庚": "金", "辛": "金",
-      "壬": "水", "癸": "水"
-    };
-    return elemMap[stem] || null;
+    const stemData = YO_MASTER.stemsMaster?.[stem];
+    return stemData?.element || null;
   }
 
-  // 十干の陰陽判定（甲=陽(odd), 乙=陰(even), 丙=陽(odd), ...）
+  // ✅ 十干の陰陽判定（stems_master.json から取得）
   function getStemPolarity(stem) {
-    const polarityMap = {
-      "甲": "odd",   "乙": "even",
-      "丙": "odd",   "丁": "even",
-      "戊": "odd",   "己": "even",
-      "庚": "odd",   "辛": "even",
-      "壬": "odd",   "癸": "even"
-    };
-    return polarityMap[stem] || null;
-  }
-
-  // ✅ 陰陽を日本語に変換（judaishusei_map.json用）
-  function getPolarityLabel(polarity) {
-    return polarity === "odd" ? "same_polarity" : "different_polarity";
+    const stemData = YO_MASTER.stemsMaster?.[stem];
+    if (!stemData) return null;
+    
+    // stems_master.json の yinYang が「陽」「陰」なので、それを使う
+    return stemData.yinYang === "陽" ? "same_polarity" : "different_polarity";
   }
 
   // 五行の相互関係を計算
@@ -161,9 +147,8 @@
     // 五行の相互関係を計算
     const relation = getFiveElementRelation(dayStem, targetStem);
     
-    // 対象干の陰陽を取得
+    // ✅ 対象干の陰陽を直接 judaishusei_map.json のキーとして取得
     const polarity = getStemPolarity(targetStem);
-    const polarityLabel = getPolarityLabel(polarity);
 
     // judaishusei_map.json から該当する星を取得
     const relationData = YO_MASTER.judaishuseiMap?.[relation];
@@ -171,9 +156,9 @@
       throw new Error(`judaishusei_map.json に関係 ${relation} がありません`);
     }
 
-    const star = relationData[polarityLabel];
+    const star = relationData[polarity];
     if (!star) {
-      throw new Error(`十大主星未定義: 関係=${relation}, 陰陽=${polarityLabel}`);
+      throw new Error(`十大主星未定義: 関係=${relation}, 陰陽=${polarity}`);
     }
 
     return star;
@@ -190,7 +175,7 @@
   }
 
   // =========================
-  // 十二大従星
+  // 十二���従星
   // =========================
   function getJuniun(dayStem, targetBranch) {
     const tableByDayStem = YO_MASTER.juniunTable?.[dayStem];
@@ -214,13 +199,12 @@
       throw new Error(`junidaijusei_master.json に十二運 ${juniun} がありません`);
     }
 
-    // ✅ プロパティ名を index.html の期待形式に合わせる
     return {
-      star: master.star || master.name || juniun,  // 従星の名前
-      juniun: juniun,                               // 十二運の名前
-      energy: master.energy || null,                // エネルギー値
-      phase: master.phase || null,                  // 位相
-      keywords: master.keywords || []               // キーワード配列
+      star: master.star || master.name || juniun,
+      juniun: juniun,
+      energy: master.energy || null,
+      phase: master.phase || null,
+      keywords: master.keywords || []
     };
   }
 
