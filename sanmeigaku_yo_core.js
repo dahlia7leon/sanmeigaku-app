@@ -1,6 +1,6 @@
 // sanmeigaku_yo_core.js
 // 陽占コア
-// - 十大主星: 五行相互関係 + judaishusei_map.json から算出
+// - 十大主星: 日干と対象干の直接マップから算出
 // - 十二大従星: 日干 + 各支 から算出
 // 必要ファイル:
 //   stems_master.json
@@ -68,97 +68,20 @@
   }
 
   // =========================
-  // 五行相互関係の計算
-  // =========================
-
-  // 十干の五行対応（stems_master.json から取得）
-  function getStemElement(stem) {
-    const stemData = YO_MASTER.stemsMaster?.[stem];
-    return stemData?.element || null;
-  }
-
-  // ✅ 十干の陰陽判定（stems_master.json から取得）
-  function getStemPolarity(stem) {
-    const stemData = YO_MASTER.stemsMaster?.[stem];
-    if (!stemData) return null;
-    
-    // stems_master.json の yinYang が「陽」「陰」なので、それを使う
-    return stemData.yinYang === "陽" ? "same_polarity" : "different_polarity";
-  }
-
-  // 五行の相互関係を計算
-  // base = 日干, target = 対象干
-  // 戻り値: "same", "base_generates_target", "target_generates_base", "base_controls_target", "target_controls_base"
-  function getFiveElementRelation(baseStem, targetStem) {
-    const baseElem = getStemElement(baseStem);
-    const targetElem = getStemElement(targetStem);
-
-    if (!baseElem || !targetElem) {
-      throw new Error(`五行判定失敗: 日干=${baseStem}, 対象干=${targetStem}`);
-    }
-
-    // 同じ五行
-    if (baseElem === targetElem) {
-      return "same";
-    }
-
-    // 相生関係（AがBを生む）
-    const generates = {
-      "木": "火",
-      "火": "土",
-      "土": "金",
-      "金": "水",
-      "水": "木"
-    };
-
-    // 相剋関係（AがBを剋す）
-    const controls = {
-      "木": "土",
-      "土": "水",
-      "水": "火",
-      "火": "金",
-      "金": "木"
-    };
-
-    if (generates[baseElem] === targetElem) {
-      return "base_generates_target"; // 日干が対象干を生む
-    }
-
-    if (generates[targetElem] === baseElem) {
-      return "target_generates_base"; // 対象干が日干を生む
-    }
-
-    if (controls[baseElem] === targetElem) {
-      return "base_controls_target"; // 日干が対象干を剋す
-    }
-
-    if (controls[targetElem] === baseElem) {
-      return "target_controls_base"; // 対象干が日干を剋す
-    }
-
-    throw new Error(`五行関係不明: ${baseElem} と ${targetElem}`);
-  }
-
-  // =========================
   // 十大主星
   // =========================
+  // ✅ シンプル：judaishusei_map.json[日干][対象干] で直接検索
 
   function getJudaishusei(dayStem, targetStem) {
-    // 五行の相互関係を計算
-    const relation = getFiveElementRelation(dayStem, targetStem);
-    
-    // ✅ 対象干の陰陽を直接 judaishusei_map.json のキーとして取得
-    const polarity = getStemPolarity(targetStem);
-
-    // judaishusei_map.json から該当する星を取得
-    const relationData = YO_MASTER.judaishuseiMap?.[relation];
-    if (!relationData) {
-      throw new Error(`judaishusei_map.json に関係 ${relation} がありません`);
+    // judaishusei_map.json[日干][対象干] から星を直接取得
+    const mapByDayStem = YO_MASTER.judaishuseiMap?.[dayStem];
+    if (!mapByDayStem) {
+      throw new Error(`judaishusei_map.json に日干 ${dayStem} がありません`);
     }
 
-    const star = relationData[polarity];
+    const star = mapByDayStem[targetStem];
     if (!star) {
-      throw new Error(`十大主星未定義: 関係=${relation}, 陰陽=${polarity}`);
+      throw new Error(`十大主星未定義: 日干=${dayStem}, 対象干=${targetStem}`);
     }
 
     return star;
@@ -175,7 +98,7 @@
   }
 
   // =========================
-  // 十二���従星
+  // 十二大従星
   // =========================
   function getJuniun(dayStem, targetBranch) {
     const tableByDayStem = YO_MASTER.juniunTable?.[dayStem];
@@ -277,8 +200,5 @@
   window.getJuniun = getJuniun;
   window.getJunidaijusei = getJunidaijusei;
   window.renderYoDebug = renderYoDebug;
-  window.getFiveElementRelation = getFiveElementRelation;
-  window.getStemElement = getStemElement;
-  window.getStemPolarity = getStemPolarity;
 
 })();
