@@ -1,0 +1,102 @@
+[
+  {
+    "date": "1950-06-30",
+    "expected": {
+      "year": "庚寅",
+      "month": "壬午",
+      "day": "丙申"
+    },
+    "notes": "1950s sample; month boundary not involved",
+    "source": "benri.jp etomonth 1950-06"
+  },
+  {
+    "date": "1953-03-10",
+    "expected": {
+      "year": "癸巳",
+      "month": "乙卯",
+      "day": "庚申"
+    },
+    "notes": "1950s sample after 啓蟄",
+    "source": "benri.jp etomonth 1953-03"
+  },
+  {
+    "date": "1954-02-28",
+    "expected": {
+      "year": "甲午",
+      "month": "丙寅",
+      "day": "乙卯"
+    },
+    "notes": "1950s sample soon after 立春",
+    "source": "benri.jp etomonth 1954-02"
+  },
+  {
+    "date": "1966-04-28",
+    "expected": {
+      "year": "丙午",
+      "month": "壬辰",
+      "day": "丁巳"
+    },
+    "notes": "1960s sample",
+    "source": "benri.jp etomonth 1966-04"
+  },
+  {
+    "date": "1977-07-29",
+    "expected": {
+      "year": "丁巳",
+      "month": "丁未",
+      "day": "丁亥"
+    },
+    "notes": "user-reported reference date",
+    "source": "benri.jp etomonth 1977-07"
+  },
+  {
+    "date": "1984-11-12",
+    "expected": {
+      "year": "甲子",
+      "month": "乙亥",
+      "day": "庚戌"
+    },
+    "notes": "1980s sample",
+    "source": "benri.jp etomonth 1984-11"
+  },
+  {
+    "date": "1990-01-01",
+    "expected": {
+      "year": "己巳",
+      "month": "丙子",
+      "day": "丙寅"
+    },
+    "notes": "user-tested date; before 小寒 and before 立春",
+    "source": "latest agreed reference"
+  },
+  {
+    "date": "2001-09-02",
+    "expected": {
+      "year": "辛巳",
+      "month": "丙申",
+      "day": "戊辰"
+    },
+    "notes": "2000s sample before 白露",
+    "source": "benri.jp etomonth 2001-09"
+  },
+  {
+    "date": "2012-06-17",
+    "expected": {
+      "year": "壬辰",
+      "month": "丙午",
+      "day": "己酉"
+    },
+    "notes": "2010s sample before 小暑",
+    "source": "benri.jp etomonth 2012-06"
+  },
+  {
+    "date": "2025-10-03",
+    "expected": {
+      "year": "乙巳",
+      "month": "乙酉",
+      "day": "乙巳"
+    },
+    "notes": "2020s sample before 寒露",
+    "source": "benri.jp etomonth 2025-10"
+  }
+]

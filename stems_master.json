@@ -1,0 +1,12 @@
+{
+  "甲": { "element": "木", "yinYang": "陽" },
+  "乙": { "element": "木", "yinYang": "陰" },
+  "丙": { "element": "火", "yinYang": "陽" },
+  "丁": { "element": "火", "yinYang": "陰" },
+  "戊": { "element": "土", "yinYang": "陽" },
+  "己": { "element": "土", "yinYang": "陰" },
+  "庚": { "element": "金", "yinYang": "陽" },
+  "辛": { "element": "金", "yinYang": "陰" },
+  "壬": { "element": "水", "yinYang": "陽" },
+  "癸": { "element": "水", "yinYang": "陰" }
+}

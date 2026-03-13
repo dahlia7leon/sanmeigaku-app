@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "name": "甲子",
+    "kan": "甲",
+    "shi": "子",
+    "kan_index": 1,
+    "shi_index": 1,
+    "kan_element": "木",
+    "shi_element": "水",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "癸"
+    }
+  },
+  {
+    "id": 2,
+    "name": "乙丑",
+    "kan": "乙",
+    "shi": "丑",
+    "kan_index": 2,
+    "shi_index": 2,
+    "kan_element": "木",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "癸",
+      "chu": "辛",
+      "hon": "己"
+    }
+  },
+  {
+    "id": 3,
+    "name": "丙寅",
+    "kan": "丙",
+    "shi": "寅",
+    "kan_index": 3,
+    "shi_index": 3,
+    "kan_element": "火",
+    "shi_element": "木",
+    "zokan": {
+      "sho": "戊",
+      "chu": "丙",
+      "hon": "甲"
+    }
+  },
+  {
+    "id": 4,
+    "name": "丁卯",
+    "kan": "丁",
+    "shi": "卯",
+    "kan_index": 4,
+    "shi_index": 4,
+    "kan_element": "火",
+    "shi_element": "木",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "乙"
+    }
+  },
+  {
+    "id": 5,
+    "name": "戊辰",
+    "kan": "戊",
+    "shi": "辰",
+    "kan_index": 5,
+    "shi_index": 5,
+    "kan_element": "土",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "乙",
+      "chu": "癸",
+      "hon": "戊"
+    }
+  },
+  {
+    "id": 6,
+    "name": "己巳",
+    "kan": "己",
+    "shi": "巳",
+    "kan_index": 6,
+    "shi_index": 6,
+    "kan_element": "土",
+    "shi_element": "火",
+    "zokan": {
+      "sho": "戊",
+      "chu": "庚",
+      "hon": "丙"
+    }
+  },
+  {
+    "id": 7,
+    "name": "庚午",
+    "kan": "庚",
+    "shi": "午",
+    "kan_index": 7,
+    "shi_index": 7,
+    "kan_element": "金",
+    "shi_element": "火",
+    "zokan": {
+      "sho": "己",
+      "chu": "丁",
+      "hon": null
+    }
+  },
+  {
+    "id": 8,
+    "name": "辛未",
+    "kan": "辛",
+    "shi": "未",
+    "kan_index": 8,
+    "shi_index": 8,
+    "kan_element": "金",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "丁",
+      "chu": "乙",
+      "hon": "己"
+    }
+  },
+  {
+    "id": 9,
+    "name": "壬申",
+    "kan": "壬",
+    "shi": "申",
+    "kan_index": 9,
+    "shi_index": 9,
+    "kan_element": "水",
+    "shi_element": "金",
+    "zokan": {
+      "sho": "己",
+      "chu": "壬",
+      "hon": "庚"
+    }
+  },
+  {
+    "id": 10,
+    "name": "癸酉",
+    "kan": "癸",
+    "shi": "酉",
+    "kan_index": 10,
+    "shi_index": 10,
+    "kan_element": "水",
+    "shi_element": "金",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "辛"
+    }
+  },
+  {
+    "id": 11,
+    "name": "甲戌",
+    "kan": "甲",
+    "shi": "戌",
+    "kan_index": 1,
+    "shi_index": 11,
+    "kan_element": "木",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "辛",
+      "chu": "丁",
+      "hon": "戊"
+    }
+  },
+  {
+    "id": 12,
+    "name": "乙亥",
+    "kan": "乙",
+    "shi": "亥",
+    "kan_index": 2,
+    "shi_index": 12,
+    "kan_element": "木",
+    "shi_element": "水",
+    "zokan": {
+      "sho": "甲",
+      "chu": null,
+      "hon": "壬"
+    }
+  },
+  {
+    "id": 13,
+    "name": "丙子",
+    "kan": "丙",
+    "shi": "子",
+    "kan_index": 3,
+    "shi_index": 1,
+    "kan_element": "火",
+    "shi_element": "水",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "癸"
+    }
+  },
+  {
+    "id": 14,
+    "name": "丁丑",
+    "kan": "丁",
+    "shi": "丑",
+    "kan_index": 4,
+    "shi_index": 2,
+    "kan_element": "火",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "癸",
+      "chu": "辛",
+      "hon": "己"
+    }
+  },
+  {
+    "id": 15,
+    "name": "戊寅",
+    "kan": "戊",
+    "shi": "寅",
+    "kan_index": 5,
+    "shi_index": 3,
+    "kan_element": "土",
+    "shi_element": "木",
+    "zokan": {
+      "sho": "戊",
+      "chu": "丙",
+      "hon": "甲"
+    }
+  },
+  {
+    "id": 16,
+    "name": "己卯",
+    "kan": "己",
+    "shi": "卯",
+    "kan_index": 6,
+    "shi_index": 4,
+    "kan_element": "土",
+    "shi_element": "木",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "乙"
+    }
+  },
+  {
+    "id": 17,
+    "name": "庚辰",
+    "kan": "庚",
+    "shi": "辰",
+    "kan_index": 7,
+    "shi_index": 5,
+    "kan_element": "金",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "乙",
+      "chu": "癸",
+      "hon": "戊"
+    }
+  },
+  {
+    "id": 18,
+    "name": "辛巳",
+    "kan": "辛",
+    "shi": "巳",
+    "kan_index": 8,
+    "shi_index": 6,
+    "kan_element": "金",
+    "shi_element": "火",
+    "zokan": {
+      "sho": "戊",
+      "chu": "庚",
+      "hon": "丙"
+    }
+  },
+  {
+    "id": 19,
+    "name": "壬午",
+    "kan": "壬",
+    "shi": "午",
+    "kan_index": 9,
+    "shi_index": 7,
+    "kan_element": "水",
+    "shi_element": "火",
+    "zokan": {
+      "sho": "己",
+      "chu": "丁",
+      "hon": null
+    }
+  },
+  {
+    "id": 20,
+    "name": "癸未",
+    "kan": "癸",
+    "shi": "未",
+    "kan_index": 10,
+    "shi_index": 8,
+    "kan_element": "水",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "丁",
+      "chu": "乙",
+      "hon": "己"
+    }
+  },
+  {
+    "id": 21,
+    "name": "甲申",
+    "kan": "甲",
+    "shi": "申",
+    "kan_index": 1,
+    "shi_index": 9,
+    "kan_element": "木",
+    "shi_element": "金",
+    "zokan": {
+      "sho": "己",
+      "chu": "壬",
+      "hon": "庚"
+    }
+  },
+  {
+    "id": 22,
+    "name": "乙酉",
+    "kan": "乙",
+    "shi": "酉",
+    "kan_index": 2,
+    "shi_index": 10,
+    "kan_element": "木",
+    "shi_element": "金",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "辛"
+    }
+  },
+  {
+    "id": 23,
+    "name": "丙戌",
+    "kan": "丙",
+    "shi": "戌",
+    "kan_index": 3,
+    "shi_index": 11,
+    "kan_element": "火",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "辛",
+      "chu": "丁",
+      "hon": "戊"
+    }
+  },
+  {
+    "id": 24,
+    "name": "丁亥",
+    "kan": "丁",
+    "shi": "亥",
+    "kan_index": 4,
+    "shi_index": 12,
+    "kan_element": "火",
+    "shi_element": "水",
+    "zokan": {
+      "sho": "甲",
+      "chu": null,
+      "hon": "壬"
+    }
+  },
+  {
+    "id": 25,
+    "name": "戊子",
+    "kan": "戊",
+    "shi": "子",
+    "kan_index": 5,
+    "shi_index": 1,
+    "kan_element": "土",
+    "shi_element": "水",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "癸"
+    }
+  },
+  {
+    "id": 26,
+    "name": "己丑",
+    "kan": "己",
+    "shi": "丑",
+    "kan_index": 6,
+    "shi_index": 2,
+    "kan_element": "土",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "癸",
+      "chu": "辛",
+      "hon": "己"
+    }
+  },
+  {
+    "id": 27,
+    "name": "庚寅",
+    "kan": "庚",
+    "shi": "寅",
+    "kan_index": 7,
+    "shi_index": 3,
+    "kan_element": "金",
+    "shi_element": "木",
+    "zokan": {
+      "sho": "戊",
+      "chu": "丙",
+      "hon": "甲"
+    }
+  },
+  {
+    "id": 28,
+    "name": "辛卯",
+    "kan": "辛",
+    "shi": "卯",
+    "kan_index": 8,
+    "shi_index": 4,
+    "kan_element": "金",
+    "shi_element": "木",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "乙"
+    }
+  },
+  {
+    "id": 29,
+    "name": "壬辰",
+    "kan": "壬",
+    "shi": "辰",
+    "kan_index": 9,
+    "shi_index": 5,
+    "kan_element": "水",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "乙",
+      "chu": "癸",
+      "hon": "戊"
+    }
+  },
+  {
+    "id": 30,
+    "name": "癸巳",
+    "kan": "癸",
+    "shi": "巳",
+    "kan_index": 10,
+    "shi_index": 6,
+    "kan_element": "水",
+    "shi_element": "火",
+    "zokan": {
+      "sho": "戊",
+      "chu": "庚",
+      "hon": "丙"
+    }
+  },
+  {
+    "id": 31,
+    "name": "甲午",
+    "kan": "甲",
+    "shi": "午",
+    "kan_index": 1,
+    "shi_index": 7,
+    "kan_element": "木",
+    "shi_element": "火",
+    "zokan": {
+      "sho": "己",
+      "chu": "丁",
+      "hon": null
+    }
+  },
+  {
+    "id": 32,
+    "name": "乙未",
+    "kan": "乙",
+    "shi": "未",
+    "kan_index": 2,
+    "shi_index": 8,
+    "kan_element": "木",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "丁",
+      "chu": "乙",
+      "hon": "己"
+    }
+  },
+  {
+    "id": 33,
+    "name": "丙申",
+    "kan": "丙",
+    "shi": "申",
+    "kan_index": 3,
+    "shi_index": 9,
+    "kan_element": "火",
+    "shi_element": "金",
+    "zokan": {
+      "sho": "己",
+      "chu": "壬",
+      "hon": "庚"
+    }
+  },
+  {
+    "id": 34,
+    "name": "丁酉",
+    "kan": "丁",
+    "shi": "酉",
+    "kan_index": 4,
+    "shi_index": 10,
+    "kan_element": "火",
+    "shi_element": "金",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "辛"
+    }
+  },
+  {
+    "id": 35,
+    "name": "戊戌",
+    "kan": "戊",
+    "shi": "戌",
+    "kan_index": 5,
+    "shi_index": 11,
+    "kan_element": "土",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "辛",
+      "chu": "丁",
+      "hon": "戊"
+    }
+  },
+  {
+    "id": 36,
+    "name": "己亥",
+    "kan": "己",
+    "shi": "亥",
+    "kan_index": 6,
+    "shi_index": 12,
+    "kan_element": "土",
+    "shi_element": "水",
+    "zokan": {
+      "sho": "甲",
+      "chu": null,
+      "hon": "壬"
+    }
+  },
+  {
+    "id": 37,
+    "name": "庚子",
+    "kan": "庚",
+    "shi": "子",
+    "kan_index": 7,
+    "shi_index": 1,
+    "kan_element": "金",
+    "shi_element": "水",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "癸"
+    }
+  },
+  {
+    "id": 38,
+    "name": "辛丑",
+    "kan": "辛",
+    "shi": "丑",
+    "kan_index": 8,
+    "shi_index": 2,
+    "kan_element": "金",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "癸",
+      "chu": "辛",
+      "hon": "己"
+    }
+  },
+  {
+    "id": 39,
+    "name": "壬寅",
+    "kan": "壬",
+    "shi": "寅",
+    "kan_index": 9,
+    "shi_index": 3,
+    "kan_element": "水",
+    "shi_element": "木",
+    "zokan": {
+      "sho": "戊",
+      "chu": "丙",
+      "hon": "甲"
+    }
+  },
+  {
+    "id": 40,
+    "name": "癸卯",
+    "kan": "癸",
+    "shi": "卯",
+    "kan_index": 10,
+    "shi_index": 4,
+    "kan_element": "水",
+    "shi_element": "木",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "乙"
+    }
+  },
+  {
+    "id": 41,
+    "name": "甲辰",
+    "kan": "甲",
+    "shi": "辰",
+    "kan_index": 1,
+    "shi_index": 5,
+    "kan_element": "木",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "乙",
+      "chu": "癸",
+      "hon": "戊"
+    }
+  },
+  {
+    "id": 42,
+    "name": "乙巳",
+    "kan": "乙",
+    "shi": "巳",
+    "kan_index": 2,
+    "shi_index": 6,
+    "kan_element": "木",
+    "shi_element": "火",
+    "zokan": {
+      "sho": "戊",
+      "chu": "庚",
+      "hon": "丙"
+    }
+  },
+  {
+    "id": 43,
+    "name": "丙午",
+    "kan": "丙",
+    "shi": "午",
+    "kan_index": 3,
+    "shi_index": 7,
+    "kan_element": "火",
+    "shi_element": "火",
+    "zokan": {
+      "sho": "己",
+      "chu": "丁",
+      "hon": null
+    }
+  },
+  {
+    "id": 44,
+    "name": "丁未",
+    "kan": "丁",
+    "shi": "未",
+    "kan_index": 4,
+    "shi_index": 8,
+    "kan_element": "火",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "丁",
+      "chu": "乙",
+      "hon": "己"
+    }
+  },
+  {
+    "id": 45,
+    "name": "戊申",
+    "kan": "戊",
+    "shi": "申",
+    "kan_index": 5,
+    "shi_index": 9,
+    "kan_element": "土",
+    "shi_element": "金",
+    "zokan": {
+      "sho": "己",
+      "chu": "壬",
+      "hon": "庚"
+    }
+  },
+  {
+    "id": 46,
+    "name": "己酉",
+    "kan": "己",
+    "shi": "酉",
+    "kan_index": 6,
+    "shi_index": 10,
+    "kan_element": "土",
+    "shi_element": "金",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "辛"
+    }
+  },
+  {
+    "id": 47,
+    "name": "庚戌",
+    "kan": "庚",
+    "shi": "戌",
+    "kan_index": 7,
+    "shi_index": 11,
+    "kan_element": "金",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "辛",
+      "chu": "丁",
+      "hon": "戊"
+    }
+  },
+  {
+    "id": 48,
+    "name": "辛亥",
+    "kan": "辛",
+    "shi": "亥",
+    "kan_index": 8,
+    "shi_index": 12,
+    "kan_element": "金",
+    "shi_element": "水",
+    "zokan": {
+      "sho": "甲",
+      "chu": null,
+      "hon": "壬"
+    }
+  },
+  {
+    "id": 49,
+    "name": "壬子",
+    "kan": "壬",
+    "shi": "子",
+    "kan_index": 9,
+    "shi_index": 1,
+    "kan_element": "水",
+    "shi_element": "水",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "癸"
+    }
+  },
+  {
+    "id": 50,
+    "name": "癸丑",
+    "kan": "癸",
+    "shi": "丑",
+    "kan_index": 10,
+    "shi_index": 2,
+    "kan_element": "水",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "癸",
+      "chu": "辛",
+      "hon": "己"
+    }
+  },
+  {
+    "id": 51,
+    "name": "甲寅",
+    "kan": "甲",
+    "shi": "寅",
+    "kan_index": 1,
+    "shi_index": 3,
+    "kan_element": "木",
+    "shi_element": "木",
+    "zokan": {
+      "sho": "戊",
+      "chu": "丙",
+      "hon": "甲"
+    }
+  },
+  {
+    "id": 52,
+    "name": "乙卯",
+    "kan": "乙",
+    "shi": "卯",
+    "kan_index": 2,
+    "shi_index": 4,
+    "kan_element": "木",
+    "shi_element": "木",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "乙"
+    }
+  },
+  {
+    "id": 53,
+    "name": "丙辰",
+    "kan": "丙",
+    "shi": "辰",
+    "kan_index": 3,
+    "shi_index": 5,
+    "kan_element": "火",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "乙",
+      "chu": "癸",
+      "hon": "戊"
+    }
+  },
+  {
+    "id": 54,
+    "name": "丁巳",
+    "kan": "丁",
+    "shi": "巳",
+    "kan_index": 4,
+    "shi_index": 6,
+    "kan_element": "火",
+    "shi_element": "火",
+    "zokan": {
+      "sho": "戊",
+      "chu": "庚",
+      "hon": "丙"
+    }
+  },
+  {
+    "id": 55,
+    "name": "戊午",
+    "kan": "戊",
+    "shi": "午",
+    "kan_index": 5,
+    "shi_index": 7,
+    "kan_element": "土",
+    "shi_element": "火",
+    "zokan": {
+      "sho": "己",
+      "chu": "丁",
+      "hon": null
+    }
+  },
+  {
+    "id": 56,
+    "name": "己未",
+    "kan": "己",
+    "shi": "未",
+    "kan_index": 6,
+    "shi_index": 8,
+    "kan_element": "土",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "丁",
+      "chu": "乙",
+      "hon": "己"
+    }
+  },
+  {
+    "id": 57,
+    "name": "庚申",
+    "kan": "庚",
+    "shi": "申",
+    "kan_index": 7,
+    "shi_index": 9,
+    "kan_element": "金",
+    "shi_element": "金",
+    "zokan": {
+      "sho": "己",
+      "chu": "壬",
+      "hon": "庚"
+    }
+  },
+  {
+    "id": 58,
+    "name": "辛酉",
+    "kan": "辛",
+    "shi": "酉",
+    "kan_index": 8,
+    "shi_index": 10,
+    "kan_element": "金",
+    "shi_element": "金",
+    "zokan": {
+      "sho": null,
+      "chu": null,
+      "hon": "辛"
+    }
+  },
+  {
+    "id": 59,
+    "name": "壬戌",
+    "kan": "壬",
+    "shi": "戌",
+    "kan_index": 9,
+    "shi_index": 11,
+    "kan_element": "水",
+    "shi_element": "土",
+    "zokan": {
+      "sho": "辛",
+      "chu": "丁",
+      "hon": "戊"
+    }
+  },
+  {
+    "id": 60,
+    "name": "癸亥",
+    "kan": "癸",
+    "shi": "亥",
+    "kan_index": 10,
+    "shi_index": 12,
+    "kan_element": "水",
+    "shi_element": "水",
+    "zokan": {
+      "sho": "甲",
+      "chu": null,
+      "hon": "壬"
+    }
+  }
+]

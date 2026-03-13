@@ -1,0 +1,52 @@
+[
+  {
+    "date": "1992-05-04",
+    "expectedMonth": "甲辰",
+    "notes": "立夏前日"
+  },
+  {
+    "date": "1992-05-05",
+    "expectedMonth": "乙巳",
+    "notes": "立夏当日"
+  },
+  {
+    "date": "1992-05-06",
+    "expectedMonth": "乙巳",
+    "notes": "立夏翌日"
+  },
+  {
+    "date": "1990-01-04",
+    "expectedMonth": "丙子",
+    "notes": "小寒前日"
+  },
+  {
+    "date": "1990-01-05",
+    "expectedMonth": "丁丑",
+    "notes": "小寒当日"
+  },
+  {
+    "date": "1990-02-03",
+    "expectedMonth": "丁丑",
+    "notes": "立春前日"
+  },
+  {
+    "date": "1990-02-04",
+    "expectedMonth": "戊寅",
+    "notes": "立春当日"
+  },
+  {
+    "date": "1992-08-07",
+    "expectedMonth": "戊申",
+    "notes": "立秋当日"
+  },
+  {
+    "date": "1992-09-07",
+    "expectedMonth": "己酉",
+    "notes": "白露当日"
+  },
+  {
+    "date": "1992-11-07",
+    "expectedMonth": "辛亥",
+    "notes": "立冬当日"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "same": {
+    "same_polarity": "貫索",
+    "different_polarity": "石門"
+  },
+  "base_generates_target": {
+    "same_polarity": "鳳閣",
+    "different_polarity": "調舒"
+  },
+  "target_generates_base": {
+    "same_polarity": "龍高",
+    "different_polarity": "玉堂"
+  },
+  "base_controls_target": {
+    "same_polarity": "禄存",
+    "different_polarity": "司禄"
+  },
+  "target_controls_base": {
+    "same_polarity": "車騎",
+    "different_polarity": "牽牛"
+  }
+}
